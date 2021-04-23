@@ -1,11 +1,7 @@
 ﻿
 
 Public Class Pedido
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GbDetalle_Enter(sender As Object, e As EventArgs) Handles GbDetalle.Enter
-
+    Private Sub Pedido_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox1.Focus()
     End Sub
 End Class

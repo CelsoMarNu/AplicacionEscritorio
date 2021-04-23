@@ -23,30 +23,36 @@ Partial Class Pedido
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GbCabecera = New System.Windows.Forms.GroupBox()
-        Me.GbDetalle = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.GbDetalle = New System.Windows.Forms.GroupBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalLinea = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.BtnEnviar = New System.Windows.Forms.Button()
         Me.GbCabecera.SuspendLayout()
         Me.GbDetalle.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,111 +72,21 @@ Partial Class Pedido
         Me.GbCabecera.Controls.Add(Me.TextBox3)
         Me.GbCabecera.Controls.Add(Me.TextBox2)
         Me.GbCabecera.Controls.Add(Me.TextBox1)
-        Me.GbCabecera.Location = New System.Drawing.Point(12, 12)
+        Me.GbCabecera.Location = New System.Drawing.Point(13, 12)
         Me.GbCabecera.Name = "GbCabecera"
         Me.GbCabecera.Size = New System.Drawing.Size(457, 203)
         Me.GbCabecera.TabIndex = 0
         Me.GbCabecera.TabStop = False
         Me.GbCabecera.Text = "Cabecera"
         '
-        'GbDetalle
+        'Label6
         '
-        Me.GbDetalle.Controls.Add(Me.TextBox11)
-        Me.GbDetalle.Controls.Add(Me.TextBox10)
-        Me.GbDetalle.Controls.Add(Me.TextBox9)
-        Me.GbDetalle.Controls.Add(Me.TextBox8)
-        Me.GbDetalle.Controls.Add(Me.TextBox7)
-        Me.GbDetalle.Controls.Add(Me.DataGridView1)
-        Me.GbDetalle.Location = New System.Drawing.Point(12, 221)
-        Me.GbDetalle.Name = "GbDetalle"
-        Me.GbDetalle.Size = New System.Drawing.Size(815, 320)
-        Me.GbDetalle.TabIndex = 1
-        Me.GbDetalle.TabStop = False
-        Me.GbDetalle.Text = "Detalle"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(163, 26)
-        Me.TextBox1.MaxLength = 20
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(87, 27)
-        Me.TextBox1.TabIndex = 0
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(163, 59)
-        Me.TextBox2.MaxLength = 200
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(282, 27)
-        Me.TextBox2.TabIndex = 1
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(163, 92)
-        Me.TextBox3.MaxLength = 10
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(87, 27)
-        Me.TextBox3.TabIndex = 2
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(358, 92)
-        Me.TextBox4.MaxLength = 10
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(87, 27)
-        Me.TextBox4.TabIndex = 3
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(163, 125)
-        Me.TextBox5.MaxLength = 200
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(282, 27)
-        Me.TextBox5.TabIndex = 4
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(163, 158)
-        Me.TextBox6.MaxLength = 10
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(87, 27)
-        Me.TextBox6.TabIndex = 5
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(49, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(108, 20)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Codigo Cliente"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(43, 62)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(114, 20)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Nombre Cliente"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(60, 95)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(97, 20)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Fecha Pedido"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(256, 95)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(102, 20)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Fecha Entrega"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(93, 161)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(64, 20)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "Moneda"
         '
         'Label5
         '
@@ -181,14 +97,205 @@ Partial Class Pedido
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Vendedor"
         '
-        'Label6
+        'Label4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(93, 161)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 20)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Moneda"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(256, 95)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(102, 20)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Fecha Entrega"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(60, 95)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(97, 20)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Fecha Pedido"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(43, 62)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(114, 20)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Nombre Cliente"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(49, 29)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(108, 20)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Codigo Cliente"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox6.Location = New System.Drawing.Point(163, 158)
+        Me.TextBox6.MaxLength = 10
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(87, 27)
+        Me.TextBox6.TabIndex = 5
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox5.Location = New System.Drawing.Point(163, 125)
+        Me.TextBox5.MaxLength = 200
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(282, 27)
+        Me.TextBox5.TabIndex = 4
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.Location = New System.Drawing.Point(358, 92)
+        Me.TextBox4.MaxLength = 10
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(87, 27)
+        Me.TextBox4.TabIndex = 3
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Location = New System.Drawing.Point(163, 92)
+        Me.TextBox3.MaxLength = 10
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(87, 27)
+        Me.TextBox3.TabIndex = 2
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Location = New System.Drawing.Point(163, 59)
+        Me.TextBox2.MaxLength = 200
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(282, 27)
+        Me.TextBox2.TabIndex = 1
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Location = New System.Drawing.Point(163, 26)
+        Me.TextBox1.MaxLength = 20
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(87, 27)
+        Me.TextBox1.TabIndex = 0
+        '
+        'GbDetalle
+        '
+        Me.GbDetalle.Controls.Add(Me.Label11)
+        Me.GbDetalle.Controls.Add(Me.Label10)
+        Me.GbDetalle.Controls.Add(Me.Label9)
+        Me.GbDetalle.Controls.Add(Me.Label8)
+        Me.GbDetalle.Controls.Add(Me.Label7)
+        Me.GbDetalle.Controls.Add(Me.TextBox11)
+        Me.GbDetalle.Controls.Add(Me.TextBox10)
+        Me.GbDetalle.Controls.Add(Me.TextBox9)
+        Me.GbDetalle.Controls.Add(Me.TextBox8)
+        Me.GbDetalle.Controls.Add(Me.TextBox7)
+        Me.GbDetalle.Controls.Add(Me.DataGridView1)
+        Me.GbDetalle.Location = New System.Drawing.Point(12, 221)
+        Me.GbDetalle.Name = "GbDetalle"
+        Me.GbDetalle.Size = New System.Drawing.Size(961, 320)
+        Me.GbDetalle.TabIndex = 1
+        Me.GbDetalle.TabStop = False
+        Me.GbDetalle.Text = "Detalle"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(61, 23)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(114, 20)
+        Me.Label11.TabIndex = 14
+        Me.Label11.Text = "Codigo Articulo"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(232, 23)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(87, 20)
+        Me.Label10.TabIndex = 13
+        Me.Label10.Text = "Descripcion"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(522, 23)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(69, 20)
+        Me.Label9.TabIndex = 12
+        Me.Label9.Text = "Cantidad"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(666, 23)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(50, 20)
+        Me.Label8.TabIndex = 11
+        Me.Label8.Text = "Precio"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(806, 23)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(42, 20)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "Total"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox11.Location = New System.Drawing.Point(806, 53)
+        Me.TextBox11.MaxLength = 10
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(146, 27)
+        Me.TextBox11.TabIndex = 9
+        '
+        'TextBox10
+        '
+        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox10.Location = New System.Drawing.Point(664, 53)
+        Me.TextBox10.MaxLength = 10
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(143, 27)
+        Me.TextBox10.TabIndex = 7
+        '
+        'TextBox9
+        '
+        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox9.Location = New System.Drawing.Point(522, 53)
+        Me.TextBox9.MaxLength = 10
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(143, 27)
+        Me.TextBox9.TabIndex = 8
+        '
+        'TextBox8
+        '
+        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox8.Location = New System.Drawing.Point(232, 53)
+        Me.TextBox8.MaxLength = 10
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(291, 27)
+        Me.TextBox8.TabIndex = 7
+        '
+        'TextBox7
+        '
+        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox7.Location = New System.Drawing.Point(61, 53)
+        Me.TextBox7.MaxLength = 10
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(172, 27)
+        Me.TextBox7.TabIndex = 6
         '
         'DataGridView1
         '
@@ -201,7 +308,7 @@ Partial Class Pedido
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(803, 255)
+        Me.DataGridView1.Size = New System.Drawing.Size(946, 255)
         Me.DataGridView1.TabIndex = 0
         '
         'Codigo
@@ -211,7 +318,7 @@ Partial Class Pedido
         Me.Codigo.MinimumWidth = 6
         Me.Codigo.Name = "Codigo"
         Me.Codigo.ReadOnly = True
-        Me.Codigo.Width = 125
+        Me.Codigo.Width = 150
         '
         'Descripcion
         '
@@ -249,51 +356,22 @@ Partial Class Pedido
         Me.TotalLinea.ReadOnly = True
         Me.TotalLinea.Width = 125
         '
-        'TextBox7
+        'BtnEnviar
         '
-        Me.TextBox7.Location = New System.Drawing.Point(57, 27)
-        Me.TextBox7.MaxLength = 10
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox7.TabIndex = 6
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(181, 27)
-        Me.TextBox8.MaxLength = 10
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(252, 27)
-        Me.TextBox8.TabIndex = 7
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(432, 27)
-        Me.TextBox9.MaxLength = 10
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(126, 27)
-        Me.TextBox9.TabIndex = 8
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(557, 27)
-        Me.TextBox10.MaxLength = 10
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(126, 27)
-        Me.TextBox10.TabIndex = 7
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(682, 27)
-        Me.TextBox11.MaxLength = 10
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(127, 27)
-        Me.TextBox11.TabIndex = 9
+        Me.BtnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnEnviar.Location = New System.Drawing.Point(812, 186)
+        Me.BtnEnviar.Name = "BtnEnviar"
+        Me.BtnEnviar.Size = New System.Drawing.Size(152, 29)
+        Me.BtnEnviar.TabIndex = 3
+        Me.BtnEnviar.Text = "Enviar"
+        Me.BtnEnviar.UseVisualStyleBackColor = True
         '
         'Pedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(832, 553)
+        Me.ClientSize = New System.Drawing.Size(1001, 553)
+        Me.Controls.Add(Me.BtnEnviar)
         Me.Controls.Add(Me.GbDetalle)
         Me.Controls.Add(Me.GbCabecera)
         Me.Name = "Pedido"
@@ -322,14 +400,20 @@ Partial Class Pedido
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents GbDetalle As GroupBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Codigo As DataGridViewTextBoxColumn
-    Friend WithEvents Descripcion As DataGridViewTextBoxColumn
-    Friend WithEvents Cantidad As DataGridViewTextBoxColumn
-    Friend WithEvents Precio As DataGridViewTextBoxColumn
-    Friend WithEvents TotalLinea As DataGridViewTextBoxColumn
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Codigo As DataGridViewTextBoxColumn
+    Friend WithEvents Descripcion As DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad As DataGridViewTextBoxColumn
+    Friend WithEvents Precio As DataGridViewTextBoxColumn
+    Friend WithEvents TotalLinea As DataGridViewTextBoxColumn
+    Friend WithEvents BtnEnviar As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
 End Class
