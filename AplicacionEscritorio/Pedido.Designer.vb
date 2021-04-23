@@ -47,11 +47,6 @@ Partial Class Pedido
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.DgDetalle = New System.Windows.Forms.DataGridView()
-        Me.Codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalLinea = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnEnviar = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.GbCabecera.SuspendLayout()
@@ -257,10 +252,10 @@ Partial Class Pedido
         '
         Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox11.Enabled = False
-        Me.TextBox11.Location = New System.Drawing.Point(806, 53)
+        Me.TextBox11.Location = New System.Drawing.Point(803, 53)
         Me.TextBox11.MaxLength = 10
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(146, 27)
+        Me.TextBox11.Size = New System.Drawing.Size(149, 27)
         Me.TextBox11.TabIndex = 9
         '
         'TextBox10
@@ -269,34 +264,34 @@ Partial Class Pedido
         Me.TextBox10.Location = New System.Drawing.Point(664, 53)
         Me.TextBox10.MaxLength = 10
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(143, 27)
+        Me.TextBox10.Size = New System.Drawing.Size(140, 27)
         Me.TextBox10.TabIndex = 7
         '
         'TextBox9
         '
         Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Location = New System.Drawing.Point(522, 53)
+        Me.TextBox9.Location = New System.Drawing.Point(516, 53)
         Me.TextBox9.MaxLength = 10
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(143, 27)
+        Me.TextBox9.Size = New System.Drawing.Size(149, 27)
         Me.TextBox9.TabIndex = 8
         '
         'TextBox8
         '
         Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Location = New System.Drawing.Point(232, 53)
-        Me.TextBox8.MaxLength = 10
+        Me.TextBox8.Location = New System.Drawing.Point(179, 53)
+        Me.TextBox8.MaxLength = 180
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(291, 27)
+        Me.TextBox8.Size = New System.Drawing.Size(337, 27)
         Me.TextBox8.TabIndex = 7
         '
         'TextBox7
         '
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Location = New System.Drawing.Point(61, 53)
+        Me.TextBox7.Location = New System.Drawing.Point(44, 53)
         Me.TextBox7.MaxLength = 10
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(172, 27)
+        Me.TextBox7.Size = New System.Drawing.Size(143, 27)
         Me.TextBox7.TabIndex = 6
         '
         'DgDetalle
@@ -304,7 +299,6 @@ Partial Class Pedido
         Me.DgDetalle.AllowUserToAddRows = False
         Me.DgDetalle.AllowUserToDeleteRows = False
         Me.DgDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgDetalle.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Codigo, Me.Descripcion, Me.Cantidad, Me.Precio, Me.TotalLinea})
         Me.DgDetalle.Location = New System.Drawing.Point(6, 53)
         Me.DgDetalle.Name = "DgDetalle"
         Me.DgDetalle.ReadOnly = True
@@ -312,51 +306,6 @@ Partial Class Pedido
         Me.DgDetalle.RowTemplate.Height = 29
         Me.DgDetalle.Size = New System.Drawing.Size(946, 255)
         Me.DgDetalle.TabIndex = 0
-        '
-        'Codigo
-        '
-        Me.Codigo.HeaderText = "Codigo Articulo"
-        Me.Codigo.MaxInputLength = 20
-        Me.Codigo.MinimumWidth = 6
-        Me.Codigo.Name = "Codigo"
-        Me.Codigo.ReadOnly = True
-        Me.Codigo.Width = 150
-        '
-        'Descripcion
-        '
-        Me.Descripcion.HeaderText = "Descripcion"
-        Me.Descripcion.MaxInputLength = 200
-        Me.Descripcion.MinimumWidth = 6
-        Me.Descripcion.Name = "Descripcion"
-        Me.Descripcion.ReadOnly = True
-        Me.Descripcion.Width = 250
-        '
-        'Cantidad
-        '
-        Me.Cantidad.HeaderText = "Cantidad"
-        Me.Cantidad.MaxInputLength = 18
-        Me.Cantidad.MinimumWidth = 6
-        Me.Cantidad.Name = "Cantidad"
-        Me.Cantidad.ReadOnly = True
-        Me.Cantidad.Width = 125
-        '
-        'Precio
-        '
-        Me.Precio.HeaderText = "Precio"
-        Me.Precio.MaxInputLength = 18
-        Me.Precio.MinimumWidth = 6
-        Me.Precio.Name = "Precio"
-        Me.Precio.ReadOnly = True
-        Me.Precio.Width = 125
-        '
-        'TotalLinea
-        '
-        Me.TotalLinea.HeaderText = "Total"
-        Me.TotalLinea.MaxInputLength = 18
-        Me.TotalLinea.MinimumWidth = 6
-        Me.TotalLinea.Name = "TotalLinea"
-        Me.TotalLinea.ReadOnly = True
-        Me.TotalLinea.Width = 125
         '
         'BtnEnviar
         '
@@ -419,11 +368,6 @@ Partial Class Pedido
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Codigo As DataGridViewTextBoxColumn
-    Friend WithEvents Descripcion As DataGridViewTextBoxColumn
-    Friend WithEvents Cantidad As DataGridViewTextBoxColumn
-    Friend WithEvents Precio As DataGridViewTextBoxColumn
-    Friend WithEvents TotalLinea As DataGridViewTextBoxColumn
     Friend WithEvents BtnEnviar As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label

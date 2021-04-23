@@ -1,4 +1,4 @@
-﻿
+﻿Imports System.Net
 Imports System.Windows.Forms.DataGridView
 
 
@@ -7,6 +7,7 @@ Public Class Pedido
     Dim dtDetalle As New DataTable
     Dim SentPedidos As SentVentas.Pedidos
     Dim myDataSet = New DataSet("myDataSet")
+    Dim TotalGeneral As Long = 0
 
     Private Sub Pedido_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextBox1.Focus()
@@ -30,7 +31,7 @@ Public Class Pedido
         colCantidad = New DataColumn("Cantidad", GetType(System.String))
 
         Dim colPrecio As DataColumn
-        colPrecio = New DataColumn("Precio", GetType(System.Int16))
+        colPrecio = New DataColumn("Precio", GetType(System.String))
 
         Dim colTotalLinea As DataColumn
         colTotalLinea = New DataColumn("TotalLinea", GetType(System.String))
@@ -55,8 +56,10 @@ Public Class Pedido
         dtDetalle.Rows(i - 1)("Precio") = TextBox10.Text
         dtDetalle.Rows(i - 1)("TotalLinea") = TextBox11.Text
 
+        TotalGeneral = TotalGeneral + TextBox11.Text
 
         DgDetalle.DataSource = dtDetalle
+        LimpiarDetallle()
         BtnEnviar.Focus()
     End Sub
     Private Sub CargarDt()
@@ -71,6 +74,7 @@ Public Class Pedido
         TextBox5.Text = ""
         TextBox6.Text = ""
         Label12.Visible = False
+        TotalGeneral = 0
     End Sub
 
     Private Sub LimpiarDetallle()
@@ -88,10 +92,35 @@ Public Class Pedido
             Label12.Text = "DEBE CARGAR DETALLES DEL PEDIDO"
             Exit Sub
         End If
-        CargarDt()
         dtDetalle = DgDetalle.DataSource
-        SentPedidos.Enviar(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, dtDetalle)
+
+        '''cabecera
+        '''detalle
+
+        '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        ''Try
+        ''    Dim Url As String = "http://localhost:63779" ''la direccion de la API
+        ''    Dim Request As HttpWebRequest = HttpWebRequest.Create(Url)
+        ''    Request.Method = "POST"
+        ''    Dim Response As HttpWebResponse = Request.GetResponse
+        ''    Dim ResponseStream As System.IO.Stream = Response.GetResponseStream
+        ''    Dim StreamReader As New System.IO.StreamReader(ResponseStream)
+        ''    Dim data As String = StreamReader.ReadToEnd
+
+
+        ''    Request.Proxy = Nothing
+        ''    Request.UserAgent = "Test"
+
+
+        ''    StreamReader.Close()
+
+
+        ''Catch ex As Exception
+
+        ''End Try
+
     End Sub
+
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
@@ -229,4 +258,56 @@ Public Class Pedido
             AgregarLinea()
         End If
     End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox2.Focus()
+        End If
+    End Sub
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox3.Focus()
+        End If
+    End Sub
+    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox4.Focus()
+        End If
+    End Sub
+    Private Sub TextBox4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox4.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox5.Focus()
+        End If
+    End Sub
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox6.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox6.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox7.Focus()
+        End If
+    End Sub
+
+
+    Private Sub TextBox7_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox7.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox8.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox8_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox8.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox9.Focus()
+        End If
+    End Sub
+
+    Private Sub TextBox9_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox9.KeyPress
+        If e.KeyChar = vbCr Then
+            TextBox10.Focus()
+        End If
+    End Sub
+
 End Class

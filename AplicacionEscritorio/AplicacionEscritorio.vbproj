@@ -18,4 +18,19 @@
     <ProjectReference Include="..\SentPedidos\SentPedidos.vbproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Aplicacion">
+      <HintPath>..\..\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Aplicacion.dll</HintPath>
+    </Reference>
+    <Reference Include="Dominio">
+      <HintPath>..\..\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Dominio.dll</HintPath>
+    </Reference>
+    <Reference Include="Pedidos">
+      <HintPath>..\..\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Pedidos.dll</HintPath>
+    </Reference>
+    <Reference Include="Persistencia">
+      <HintPath>..\..\Pedidos\Pedidos\bin\Debug\netcoreapp3.1\Persistencia.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
