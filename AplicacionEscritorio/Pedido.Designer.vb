@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Pedido
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Pedido
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GbCabecera = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -46,16 +46,17 @@ Partial Class Pedido
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DgDetalle = New System.Windows.Forms.DataGridView()
         Me.Codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalLinea = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BtnEnviar = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.GbCabecera.SuspendLayout()
         Me.GbDetalle.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GbCabecera
@@ -199,7 +200,7 @@ Partial Class Pedido
         Me.GbDetalle.Controls.Add(Me.TextBox9)
         Me.GbDetalle.Controls.Add(Me.TextBox8)
         Me.GbDetalle.Controls.Add(Me.TextBox7)
-        Me.GbDetalle.Controls.Add(Me.DataGridView1)
+        Me.GbDetalle.Controls.Add(Me.DgDetalle)
         Me.GbDetalle.Location = New System.Drawing.Point(12, 221)
         Me.GbDetalle.Name = "GbDetalle"
         Me.GbDetalle.Size = New System.Drawing.Size(961, 320)
@@ -255,6 +256,7 @@ Partial Class Pedido
         'TextBox11
         '
         Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox11.Enabled = False
         Me.TextBox11.Location = New System.Drawing.Point(806, 53)
         Me.TextBox11.MaxLength = 10
         Me.TextBox11.Name = "TextBox11"
@@ -297,19 +299,19 @@ Partial Class Pedido
         Me.TextBox7.Size = New System.Drawing.Size(172, 27)
         Me.TextBox7.TabIndex = 6
         '
-        'DataGridView1
+        'DgDetalle
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Codigo, Me.Descripcion, Me.Cantidad, Me.Precio, Me.TotalLinea})
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 53)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(946, 255)
-        Me.DataGridView1.TabIndex = 0
+        Me.DgDetalle.AllowUserToAddRows = False
+        Me.DgDetalle.AllowUserToDeleteRows = False
+        Me.DgDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgDetalle.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Codigo, Me.Descripcion, Me.Cantidad, Me.Precio, Me.TotalLinea})
+        Me.DgDetalle.Location = New System.Drawing.Point(6, 53)
+        Me.DgDetalle.Name = "DgDetalle"
+        Me.DgDetalle.ReadOnly = True
+        Me.DgDetalle.RowHeadersWidth = 51
+        Me.DgDetalle.RowTemplate.Height = 29
+        Me.DgDetalle.Size = New System.Drawing.Size(946, 255)
+        Me.DgDetalle.TabIndex = 0
         '
         'Codigo
         '
@@ -366,11 +368,22 @@ Partial Class Pedido
         Me.BtnEnviar.Text = "Enviar"
         Me.BtnEnviar.UseVisualStyleBackColor = True
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.DarkRed
+        Me.Label12.Location = New System.Drawing.Point(492, 12)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(61, 20)
+        Me.Label12.TabIndex = 4
+        Me.Label12.Text = "Label12"
+        '
         'Pedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1001, 553)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.BtnEnviar)
         Me.Controls.Add(Me.GbDetalle)
         Me.Controls.Add(Me.GbCabecera)
@@ -380,8 +393,9 @@ Partial Class Pedido
         Me.GbCabecera.PerformLayout()
         Me.GbDetalle.ResumeLayout(False)
         Me.GbDetalle.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgDetalle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -399,7 +413,7 @@ Partial Class Pedido
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents GbDetalle As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DgDetalle As DataGridView
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents TextBox9 As TextBox
@@ -416,4 +430,5 @@ Partial Class Pedido
     Friend WithEvents Label9 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents Label12 As Label
 End Class
